@@ -14,5 +14,12 @@ class Fondos {
    
    
  }
+ 
+ void cucas (float cx, float cy, float ctam, float tam) {
+   pushStyle () ;
+   imageMode (CENTER);
+   image (fondos [5], cx, cy, ctam, tam) ;
+   popStyle () ;
+ }
 
 }

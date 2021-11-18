@@ -15,10 +15,11 @@ class Bichos {
     if (colorbichos == true) {
     fill(255) ;
     ellipse (bx, by, btam, btam) ;
+    cuca.cucas(bx, by, btam, btam) ;
     } else {
      fill(0) ; 
     }
-//cuca.ponerFondos(5) ; //no puedo ponerle valor de donde estan las ellipses
+    
     }
   void moverBichos () {
     if ( bx> width+btam || bx < 0+btam && by> height+btam || by< 0+btam) {
