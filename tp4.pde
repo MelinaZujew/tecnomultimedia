@@ -1,9 +1,10 @@
-//URL video: https://youtu.be/DDH4uEIydU4
+//URL video: https://youtu.be/EL5ExaXohCI
 color relleno = color(255);
 String estado;
 String [] texto, texto2, texto3, texto4, texto6, texto7, texto9, texto10,texto11, textof2, texto13;
 PImage [] fondos = new PImage [6] ;
 PImage muerte ;
+PImage viejito;
 int anch = 130 ;
 int num ;
 void setup() {
@@ -13,6 +14,7 @@ void setup() {
    fondos [i] = loadImage ("fondo"+i+".png") ; 
   }
   muerte = loadImage("muerte.png") ;
+  viejito = loadImage("viejito.png") ;
 texto = loadStrings ("Changfamei.txt") ;
 
 for (int i = 0; i < texto.length; i++) {
@@ -207,9 +209,11 @@ void draw() {
 }
 
 if (estado.equals("aventura7")) {
-       image (fondos [1], 0, 0) ;
+     image (fondos [3], 0, 0) ;
      fill(156,209,158,200) ;
   rect(105, 130, 580, 300, 50) ;
+   
+   image(viejito, 0,0) ;
    for (int i=0; i<texto7.length; i++) {
      textSize(18);
        fill(0) ;
@@ -222,7 +226,7 @@ if (estado.equals("aventura7")) {
 }
 
  if (estado.equals("aventura8")) {
-      image (fondos [1], 0, 0) ;
+      image (fondos [3], 0, 0) ;
      fill(156,209,158,200) ;
   rect(105, 130, 580, 300, 50) ;
    textSize(18);
