@@ -265,7 +265,7 @@ if (estado.equals("aventura10")) {
        fill(0) ;
   text("Siguiente", width/2,height/2+80) ;
 }
-
+/*
 if (estado.equals("aventura11")) {
        image (fondos [1], 0, 0) ;
      fill(156,209,158,200) ;
@@ -280,7 +280,7 @@ if (estado.equals("aventura11")) {
        fill(0) ;
   text("Siguiente", width/2,height/2+80) ;
 }
-/*
+
 if (estado.equals("aventura12")) {
      fill(240,214,160) ;
   rect(0, 100, width, 300, 50) ;
